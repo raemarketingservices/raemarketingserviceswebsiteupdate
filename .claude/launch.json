@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-Command", "Start-Process -NoNewWindow -FilePath npm -ArgumentList @('run','dev','--','--hostname','localhost','--port','3000') -PassThru | Wait-Process"],
+      "port": 3000
+    }
+  ]
+}
